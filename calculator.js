@@ -35,9 +35,8 @@ function displayHistory() {
     }
 }
 
-expression(2, "+", 7)
-expression(15, "/", 43)
-//expression(41, "/", 0)
-//expression(-51, "-", 3)
-displayHistory()
+//Insert expressions below this line
 
+//Insert expressions above this line
+
+displayHistory()
