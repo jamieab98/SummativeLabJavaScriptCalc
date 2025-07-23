@@ -16,7 +16,8 @@ function expression(a, operator, b) {
         history.push(equation)
     } else if (operator === "/") {
         if (b == 0) {
-            console.log("Error. Cannot divide by 0")
+            equation = "Error. Cannot divide by 0";
+            history.push(equation);
         } else {
         let result = a / b;
         equation = a + " / " + b + " = " + result;
@@ -25,9 +26,18 @@ function expression(a, operator, b) {
     } else {
         console.log('Error. Please enter a valid operator "+", "-", "*", or "/".')
     }
-    console.log(history);
-    history.splice(0,1);
+}
+function displayHistory() {
+    if (history == ""){
+        console.log("History is empty");
+    } else {
+        console.log(history);
+    }
 }
 
 expression(2, "+", 7)
 expression(15, "/", 43)
+//expression(41, "/", 0)
+//expression(-51, "-", 3)
+displayHistory()
+
