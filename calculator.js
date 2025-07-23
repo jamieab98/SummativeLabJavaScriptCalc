@@ -39,4 +39,12 @@ function expression(a, operator, b) {
         console.log('Error. Please enter a valid operator "+", "-", "*", or "/".')
     }
 }
-expression(2, "/", 3)
+
+//let history = [];
+function updateHistory(update) {
+    let history = [];
+    history[0] = update;
+    console.log(history);
+}
+updateHistory("2 / 4 = 0.5")
+updateHistory("5 + 3 = 8")
