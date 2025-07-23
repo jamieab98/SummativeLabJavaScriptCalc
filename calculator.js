@@ -35,8 +35,8 @@ function displayHistory() {
     }
 }
 
-//Insert expressions below this line
+//Insert expression(s) below this line
 
-//Insert expressions above this line
+//Insert expression(s) above this line
 
 displayHistory()
